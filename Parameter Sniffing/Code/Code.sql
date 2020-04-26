@@ -1,7 +1,7 @@
 -------------------------------------------------------------------------------------
 -- Parameter Sniffing in SQL Server Stored Procedures
 -- Milos Radivojevic, Data Plarform MVP, bwin, Austria
--- E: milos.radovojevic@chello.at
+-- E: milos.radivojevic@chello.at
 -- W: https://milossql.wordpress.com/
 -------------------------------------------------------------------------------------
 USE PS;

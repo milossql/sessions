@@ -1,7 +1,8 @@
 -------------------------------------------------------------------------------------
 -- Parameter Sniffing in SQL Server Stored Procedures
 -- Milos Radivojevic, Data Plarform MVP, bwin, Austria
--- E: MRadivojevic@gvcgroup.com
+-- E: milos.radivojevic@chello.at
+-- W: https://milossql.wordpress.com/
 -------------------------------------------------------------------------------------
 IF DB_ID('PS') IS NULL
 	CREATE DATABASE PS;
