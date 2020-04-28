@@ -50,6 +50,27 @@ GO
 ALTER DATABASE SCOPED CONFIGURATION SET PARAMETER_SNIFFING = OFF;
 GO
 
+
+----------------------------------------------
+--- Solution 2 – a favorite combination
+----------------------------------------------
+CREATE OR ALTER PROCEDURE dbo.GetOrders
+@CustomerId INT = NULL, @OrderDate DATETIME = NULL
+AS
+BEGIN
+	SELECT 
+		TOP (10) *
+	FROM dbo.Orders
+	WHERE 
+		(CustomerId = @CustomerId OR @CustomerId IS NULL)
+	AND 
+		(OrderDate = @OrderDate OR @OrderDate IS NULL)
+	ORDER BY Amount DESC
+	OPTION (OPTIMIZE FOR (@CustomerId=450));
+END
+GO
+
+
 ----------------------------------------------
 --- Solution 3 – Recompile
 ----------------------------------------------
