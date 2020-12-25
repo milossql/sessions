@@ -1,0 +1,1 @@
+.\ostress -E -iWorkload2.sql -SAT03W06206 -r25 -n1 -q
